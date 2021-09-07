@@ -1,14 +1,19 @@
 import React from 'react'
-import { Text, StyleSheet } from 'react-native'
+import { Text, StyleSheet, View } from 'react-native'
+import { not } from 'react-native-reanimated'
 
 const ComponentsScreen = () => {
-  return <Text style={styles.textStyle}>My nice component</Text>
-}
+  const phrases = {
+    greetings: 'I did not hit her, I did not.',
+    ending: 'oh, hi Mark'
+   }
 
-const styles = StyleSheet.create({
-  textStyle: {
-    fontSize: 30
-  }
-})
+  return (
+    <View>
+      <Text style={{ fontSize: 45, fontWeight: 'bold' }}>{phrases.greetings}</Text>
+      <Text style={{ fontSize: 22, fontWeight: '200' }} >{phrases.ending}</Text>
+    </View>
+  )
+}
 
 export default ComponentsScreen
