@@ -1,6 +1,5 @@
 import React from 'react'
-import { Text, StyleSheet, View } from 'react-native'
-import { not } from 'react-native-reanimated'
+import { Text, View } from 'react-native'
 
 const ComponentsScreen = () => {
   const phrases = {
