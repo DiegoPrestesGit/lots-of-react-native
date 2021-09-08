@@ -7,13 +7,19 @@ const HomeScreen = ({navigation}) => {
       <TouchableOpacity style={styles.button}
         onPress={() => navigation.navigate('ComponentsScreen')}
       >
-        <Text style={styles.text}>ComponentsScreen</Text>
+        <Text style={styles.text}>Components</Text>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.button}
         onPress={() => navigation.navigate('ListScreen')}
       >
-        <Text style={styles.text}>ListScreen</Text>
+        <Text style={styles.text}>List</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.button}
+        onPress={() => navigation.navigate('ReusableComponentsScreen')}
+      >
+        <Text style={styles.text}>ReusableComponents</Text>
       </TouchableOpacity>
     </View>
   )
