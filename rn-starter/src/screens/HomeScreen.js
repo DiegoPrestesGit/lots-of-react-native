@@ -1,13 +1,35 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { StyleSheet, View, TouchableOpacity, Text } from "react-native";
 
-const HomeScreen = () => {
-  return <Text style={styles.text}>I got it</Text>;
+const HomeScreen = ({navigation}) => {
+  return (
+    <View style={styles.view}>
+      <TouchableOpacity style={styles.button}
+        onPress={() => navigation.navigate('ComponentsScreen')}
+      >
+        <Text style={styles.text}>ComponentsScreen</Text>
+      </TouchableOpacity>
+
+      <TouchableOpacity style={styles.button}
+        onPress={() => navigation.navigate('ListScreen')}
+      >
+        <Text style={styles.text}>ListScreen</Text>
+      </TouchableOpacity>
+    </View>
+  )
 };
 
 const styles = StyleSheet.create({
+  button: {
+    marginTop: 50
+  },
   text: {
-    fontSize: 30
+    fontSize: 35,
+    fontWeight: "bold"
+  },
+  view: {
+    alignContent: "center",
+    alignItems: "center",
   }
 });
 
