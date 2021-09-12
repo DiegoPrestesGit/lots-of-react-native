@@ -9,9 +9,9 @@ import yugiohImage from '../../assets/yugioh.jpg'
 const ReusableComponentsScreen = () => {
   return (
     <View>
-      <ImageDetail title="Forest" image={forestImage}/>
-      <ImageDetail title="Rain"image={rainImage}/>
-      <ImageDetail title="Rock Concert" image={yugiohImage}/>
+      <ImageDetail score={333} title="Forest" image={forestImage}/>
+      <ImageDetail score={69} title="Rain"image={rainImage}/>
+      <ImageDetail score={666} title="Rock Concert" image={yugiohImage}/>
     </View>
   )
 }
