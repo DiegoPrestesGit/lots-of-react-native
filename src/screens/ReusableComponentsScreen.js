@@ -5,7 +5,6 @@ import forestImage from '../../assets/forest.jpg'
 import rainImage from '../../assets/rain.jpeg'
 import yugiohImage from '../../assets/yugioh.jpg'
 
-
 const ReusableComponentsScreen = () => {
   return (
     <View>

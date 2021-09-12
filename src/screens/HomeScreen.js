@@ -21,6 +21,12 @@ const HomeScreen = ({navigation}) => {
       >
         <Text style={styles.text}>ReusableComponents</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity style={styles.button}
+        onPress={() => navigation.navigate('CounterScreen')}
+      >
+        <Text style={styles.text}>Counter</Text>
+      </TouchableOpacity>
     </View>
   )
 };
