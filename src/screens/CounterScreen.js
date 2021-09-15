@@ -1,18 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Text, StyleSheet, View, TouchableOpacity } from 'react-native'
 
 const CounterScreen = () => {
-  let counter = 0
+  const [counter, setCounter] = useState(0)
 
   return (
     <View>
-      <TouchableOpacity onPress={() => counter++}>
+      <TouchableOpacity onPress={() => setCounter(counter+1)}>
         <Text style={styles.textStyle}>increase</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => counter >= 0 ? counter-- : counter}>
+
+      <TouchableOpacity onPress={() => {if(counter > 0) setCounter(counter-1)}}>
         <Text style={styles.textStyle}>decrease</Text>
       </TouchableOpacity>
-      <Text style={styles.textStyle2}>counter</Text>
+      <Text style={styles.textStyle2}>counter: {counter}</Text>
     </View>
   )
 }
@@ -24,8 +25,9 @@ const styles = StyleSheet.create({
     fontSize: 25
   },
   textStyle2: {
-    ...textStyle,
-    
+    marginVertical: 10,
+    marginHorizontal: 5,
+    fontSize: 20
   }
 })
 
