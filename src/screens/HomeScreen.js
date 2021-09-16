@@ -27,6 +27,11 @@ const HomeScreen = ({navigation}) => {
       >
         <Text style={styles.text}>Counter</Text>
       </TouchableOpacity>
+      <TouchableOpacity style={styles.button}
+        onPress={() => navigation.navigate('ColorScreen')}
+      >
+        <Text style={styles.text}>Random Color</Text>
+      </TouchableOpacity>
     </View>
   )
 };
