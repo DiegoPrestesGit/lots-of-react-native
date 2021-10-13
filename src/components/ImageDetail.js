@@ -1,5 +1,5 @@
-import React from "react"
-import { View, Text, StyleSheet, Image } from 'react-native'
+import React from "react";
+import { View, Text, StyleSheet, Image } from "react-native";
 
 const ImageDetail = ({ title, image, score }) => {
   return (
@@ -8,7 +8,7 @@ const ImageDetail = ({ title, image, score }) => {
       <Text>this image has {score} score points</Text>
       <Image source={image}></Image>
     </View>
-  )
-}
+  );
+};
 
-export default ImageDetail
+export default ImageDetail;
